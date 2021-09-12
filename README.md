@@ -1,4 +1,4 @@
-<p>A mock up mobile app for users to find the suitable hotel, comparing the hotel prices and prefered hotal location.</p>
+<p>A mock up mobile app for users to book a glight, find the suitable hotel, comparing the hotel prices and find prefered hotal location.</p>
 
 <p>Frontend</p>
 <ul>
