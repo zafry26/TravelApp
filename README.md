@@ -20,7 +20,6 @@ Google Map API
 
 ![alt text](https://github.com/zafry26/TravelApp/blob/main/SC/image_123986672%20(3).JPG?raw=true)
 
-![alt text](https://github.com/zafry26/TravelApp/blob/main/SC/image_123986672%20(4).JPG?raw=true)
 
 
 
