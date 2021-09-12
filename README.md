@@ -1,8 +1,8 @@
-A mock up mobile app for users to find the suitable hotel, comparing the hotel prices and prefered hotal location.
+<p>A mock up mobile app for users to find the suitable hotel, comparing the hotel prices and prefered hotal location.</p>
 
-Frontend
-React-Native
-Google Map API
+<p>Frontend</p>
+<p>React-Native</p>
+<p>Google Map API</p>
 
 <h1><--------------------     Dashboard    -----------------------><h1>
 
