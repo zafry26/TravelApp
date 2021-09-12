@@ -4,7 +4,7 @@ Frontend
 React-Native
 Google Map API
 
-<--Dashboard-->
+<h1><--Dashboard--><h1>
 
 ![alt text](https://github.com/zafry26/TravelApp/blob/main/SC/image_123986672%20(1).JPG?raw=true)
 
