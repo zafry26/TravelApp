@@ -4,6 +4,7 @@
 <ul>
   <li>React-Native</li>
   <li>Google Map API</li>
+  <li>Weather API</li>
 <ul>
 
 <h1><--------------------     Dashboard    -----------------------><h1>
