@@ -36,8 +36,11 @@ const Place = ({ navigation, route }) => {
   const getWeatherApi = async () => {
     try {
       let response = await fetch(
-        "http://api.weatherapi.com/v1/forecast.json?key=e6316428d22c4ab096a142118212210&q=London&days=5&aqi=no&alerts=no"
+        "http://api.weatherapi.com/v1/forecast.json?key=e6316428d22c4ab096a142118212210&q=" +
+          route.params.selectedPlace.name.replace(/\s/g, " ") +
+          "&days=5&aqi=no&alerts=no"
       );
+
       let responseJson = await response.json();
       return responseJson;
     } catch (error) {
@@ -48,6 +51,7 @@ const Place = ({ navigation, route }) => {
   React.useEffect(() => {
     let { selectedPlace } = route.params;
     setSelectedPlace(selectedPlace);
+
     getWeatherApi().then((response) => {
       setData(response);
     });
