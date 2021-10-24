@@ -27,30 +27,16 @@ import MapView, { PROVIDER_GOOGLE, MARKER, Marker } from "react-native-maps";
 import { MapStyle } from "../styles";
 
 const Place = ({ navigation, route }) => {
-  const [data, setData] = React.useState(null);
+  const [refreshkey, setRefreshKey] = React.useState(false);
   const [selectedPlace, setSelectedPlace] = React.useState(null);
   const [selectedHotel, setSelectedHotel] = React.useState(null);
 
   let _panel = React.useRef(null);
 
-  const getWeatherApi = async () => {
-    try {
-      let response = await fetch(
-        "http://api.weatherapi.com/v1/forecast.json?key=e6316428d22c4ab096a142118212210&q=London&days=5&aqi=no&alerts=no"
-      );
-      let responseJson = await response.json();
-      return responseJson;
-    } catch (error) {
-      console.error(error);
-    }
-  };
-
   React.useEffect(() => {
+    console.log("masuk place");
     let { selectedPlace } = route.params;
     setSelectedPlace(selectedPlace);
-    getWeatherApi().then((response) => {
-      setData(response);
-    });
   }, []);
 
   const renderPlaces = () => {
@@ -66,7 +52,8 @@ const Place = ({ navigation, route }) => {
           containerStyle={{ marginTop: SIZES.padding * 2 }}
         ></HeaderBar>
 
-        <WeatherScroll data={data}></WeatherScroll>
+        <WeatherScroll></WeatherScroll>
+
         <View
           style={{
             flex: 1,
